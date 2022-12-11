@@ -1,0 +1,24 @@
+"""
+import math
+i=0
+my_array = []
+print('select number')
+my_variable = input()
+my_variable = int(my_variable)
+while True:
+    i = random.randrange(1,100)
+    my_array.append(i)
+    if len(my_array) == my_variable:
+        print(my_array)
+        break
+
+def tri_a_bulle(array):
+    n = len(array)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if array[j] > array[j+1] :
+                array[j], array[j+1] = array[j+1], array[j]
+    print(array)
+    
+tri_a_bulle(my_array)
+"""

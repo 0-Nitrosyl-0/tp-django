@@ -1,0 +1,42 @@
+"""
+import math
+i=0
+my_array = []
+while True:
+    i = random.randrange(1,10)
+    my_array.append(i)
+    if len(my_array) == 50:
+        print(my_array)
+        break
+moyenne = math.fsum(my_array) / len(my_array)
+print(moyenne)
+
+i = 0
+j = 0
+for x in my_array:
+    if x == 9:
+        i += 1
+    if x >= 5:
+        j += 1
+print(i,j)
+print('le nombre max est',max(my_array))
+if 9 in my_array:
+    print('bingo')
+else:
+    print('nop')
+"""
+
+"""
+import math
+i=0
+my_array = []
+print('select number')
+my_variable = input()
+my_variable = int(my_variable)
+while True:
+    i = random.randrange(1,10)
+    my_array.append(i)
+    if len(my_array) == my_variable:
+        print(my_array)
+        break
+"""

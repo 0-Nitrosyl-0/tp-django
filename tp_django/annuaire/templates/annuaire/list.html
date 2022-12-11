@@ -1,0 +1,16 @@
+
+<div class="list">
+  <div>
+      <particulier>
+          <h2>
+            <ul>
+               {% for contact in contacts %} 
+              <li><a href ={% url 'info' nom=contact.nom%}>
+                {{contact.prenom}}{{contact.nom}}
+              </a></li>
+              {% endfor %}
+              <ul/>
+          </h2>
+      </particulier>
+  </div>
+</div>

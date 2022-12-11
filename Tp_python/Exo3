@@ -1,0 +1,31 @@
+"""
+import math
+
+class Student:
+    def __init__(self, name, langue, science, sport):
+        self.name = name
+        self.langue = langue
+        self.science = science
+        self.sport = sport
+        
+    def moyenne(self):
+        note = []
+        note.append(self.langue)
+        note.append(self.science)
+        note.append(self.sport)
+        print(math.fsum(note)/len(note))
+    
+    def display(self):
+        print(self.name + ' a eu ' + str(self.langue) + ' en langue '+ str(self.science) + ' en science '+ str(self.sport) + ' en sport.')
+
+trombi = []
+
+trombi.append(Student('Roger', 14, 17, 2))
+trombi.append(Student('Mirtille', 18, 12, 0))
+trombi.append(Student('Bilou', 20, 20, 20))
+
+for obj in trombi:
+    obj.display()
+    obj.moyenne()
+
+"""

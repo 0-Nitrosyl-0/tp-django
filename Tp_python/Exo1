@@ -1,0 +1,91 @@
+"""
+print(666)
+print('bonjour')
+my_variable='Eliott'
+print(f'my name is {my_variable}')
+print(my_variable)
+for i in range(10):
+    if i<5:
+        print(f'{i}\ncoucou')
+    elif i>4 and i<9:
+        print(i, end=", ")
+    else:
+        print(i)
+print('exo 1 fini!')
+"""
+
+"""
+i=0
+while i != 101:
+    print(i)
+    i += 1
+    
+for i in range(101):
+    print(i)
+"""
+ 
+"""
+from turtle import *
+
+while True :
+    forward(100)
+    left(90)
+    if abs(pos())<1:
+        
+        left(60)
+        forward(100)
+        right(120)
+        forward(100)
+        break
+            
+
+done()
+"""
+
+"""
+my_list = []
+print(my_list)
+my_list =['lol',666]
+print(my_list)
+print(len(my_list))
+my_list.pop(0)
+my_list.append('bonjour')
+print(my_list)
+
+for i in my_list:
+    print(i)
+
+"""
+
+import random
+"""
+i=0
+j=0
+while i != 10:
+    i = random.randrange(1,10)
+    print(i)
+    j += 1
+    if j == 100:
+        break
+print(f'il aura fallu {j} tentative')
+
+"""
+
+"""
+i=0
+j=0
+lol = []
+while i != 10:
+    i = random.randint(1,10)
+    lol.append(i)
+    print(i)
+    j += 1
+    if j == 100:
+        break
+print(f'il aura fallu {j} tentative')
+print(lol)
+print(random.choice(lol))
+random.shuffle(lol)
+print(lol)
+    
+"""
